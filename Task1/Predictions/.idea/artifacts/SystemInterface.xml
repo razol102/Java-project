@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SystemInterface">
+    <output-path>$PROJECT_DIR$/out/artifacts/SystemInterface</output-path>
+    <root id="archive" name="SystemInterface.jar">
+      <element id="module-output" name="SystemInterface" />
+      <element id="module-output" name="DTO" />
+    </root>
+  </artifact>
+</component>

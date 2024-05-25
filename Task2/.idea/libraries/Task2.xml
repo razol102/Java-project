@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Task2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DTO.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SystemInterface.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SystemGUI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

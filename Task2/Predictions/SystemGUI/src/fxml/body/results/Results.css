@@ -1,0 +1,5 @@
+
+.pressButtonPicture {
+    -fx-background-image: url('pressButton.jpg');
+    -fx-background-size: 100% 100%;
+}

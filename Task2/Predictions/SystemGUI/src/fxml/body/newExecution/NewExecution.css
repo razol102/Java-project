@@ -1,0 +1,10 @@
+.thanos_Glove{
+    -fx-background-image: url('../../pictures/thanos_Glove.png');
+    -fx-background-size: cover;
+}
+
+/*
+.snapGif{
+    -fx-background-image: url('snapGif.gif');
+    -fx-background-size: 100% 100%;
+}*/

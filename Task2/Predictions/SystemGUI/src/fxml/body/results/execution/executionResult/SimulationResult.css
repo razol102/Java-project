@@ -1,0 +1,9 @@
+.deadpool{
+    -fx-background-image: url('../../../../pictures/deadpoolLying.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+.hulk{
+    -fx-background-image: url('fxml/body/results/execution/executionResult/hulk.jpg');
+    -fx-background-size: 100% 100%;
+}

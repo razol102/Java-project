@@ -1,0 +1,10 @@
+.root {
+    -fx-font-family: "Calibri";
+
+}
+.tab-pane .tab-header-area .tab:selected {
+    /* Your styling for active tabs here */
+    -fx-background-color: lightblue;
+    -fx-font-style: italic bold;
+}
+

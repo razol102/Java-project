@@ -1,0 +1,12 @@
+.root {
+    -fx-font-family: "Calibri";
+    -fx-font-size: 12px;
+
+}
+.simulation-box {
+    -fx-background-image: url('../pictures/captain_america_sheild.jpg');
+    -fx-background-size: cover;
+    -fx-border-width: 2px;   /* Border width */
+    -fx-border-style: dashed; /* Border style */
+}
+

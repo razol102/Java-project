@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="389.0" stylesheets="@Property.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.body.details.property.PropertyController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="385.0">
+         <children>
+            <Label styleClass="title" text="Property details:" underline="true" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="164.0" prefWidth="369.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="163.0" prefWidth="231.0" styleClass="grid-pane">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.80001220703124" minWidth="10.0" prefWidth="104.8000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.9999996185303" minWidth="10.0" prefWidth="125.59997558593751" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" text="propName" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Label fx:id="typeLabel" alignment="CENTER" contentDisplay="CENTER" text="propType" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label fx:id="rangeLabel" alignment="CENTER" contentDisplay="CENTER" text="propRange" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Label fx:id="isRandomLabel" alignment="CENTER" contentDisplay="CENTER" text="propRandom" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Name:" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Type:" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Range:" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="simulationResultComponent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="823.0" stylesheets="@SimulationResult.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.body.results.execution.executionResult.SimulationResultController">
+   <children>
+      <HBox layoutX="2.0" prefHeight="250.0" prefWidth="823.0">
+         <children>
+            <TreeView fx:id="detailsTree" onMouseClicked="#selectNode" prefHeight="400.0" prefWidth="362.0" />
+            <TabPane prefHeight="300.0" prefWidth="805.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Histogram">
+                     <content>
+                        <BarChart fx:id="barChart">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                     </content>
+                  </Tab>
+                  <Tab text="Population graph">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <LineChart fx:id="lineChart" prefHeight="268.0" prefWidth="623.0">
+                                 <xAxis>
+                                    <CategoryAxis side="BOTTOM" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis side="LEFT" />
+                                 </yAxis>
+                              </LineChart>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Details">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="219.0" prefWidth="626.0">
+                                 <children>
+                                    <HBox prefHeight="272.0" prefWidth="307.0">
+                                       <children>
+                                          <GridPane prefHeight="154.0" prefWidth="358.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.20001220703125" minWidth="10.0" prefWidth="152.6000198364258" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.79998779296875" minWidth="10.0" prefWidth="155.7999801635742" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Consistency:" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Average:" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="consistencyLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                   <font>
+                                                      <Font name="Calibri" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="averageLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                   <font>
+                                                      <Font name="Calibri" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="hulkHBox" alignment="CENTER" prefHeight="272.0" prefWidth="322.0" styleClass="hulk" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

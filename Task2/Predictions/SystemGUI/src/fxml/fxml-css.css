@@ -1,0 +1,16 @@
+.root {
+    -fx-font-family: "Calibri";
+}
+
+.Border-Pane {
+    -fx-background-image: url('pictures/Spidy.jpg');
+    -fx-background-size: cover;
+}
+
+.tab-button {
+    -fx-background-color: lightgray; /* Tab header background color */
+    -fx-border-color: gray; /* Tab border color */
+
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 12px;
+}

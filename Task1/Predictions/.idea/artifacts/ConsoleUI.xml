@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ConsoleUI">
+    <output-path>$PROJECT_DIR$/out/artifacts/ConsoleUI</output-path>
+    <root id="archive" name="ConsoleUI.jar">
+      <element id="module-output" name="ConsoleUI" />
+      <element id="module-output" name="DTO" />
+      <element id="module-output" name="SystemInterface" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ConsoleUI/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

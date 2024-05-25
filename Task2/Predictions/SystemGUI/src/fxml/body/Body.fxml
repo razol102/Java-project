@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="520.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.body.BodyController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TabPane fx:id="tabManager" prefHeight="518.0" prefWidth="1057.0" rotateGraphic="true" tabClosingPolicy="UNAVAILABLE" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <tabs>
+            <Tab fx:id="tabDetails" styleClass="tab-button" text="Details">
+               <content>
+                  <AnchorPane prefHeight="475.0" prefWidth="1058.0">
+                     <children>
+                        <fx:include fx:id="detailsComponent" prefHeight="538.0" prefWidth="1326.0" source="details/Details.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+<!--            <Tab text="Details">-->
+<!--               <content>-->
+<!--                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>-->
+<!--               </content>-->
+<!--               <fx:include fx:id="detailsComponent" source="/fxml/body/details/Details.fxml"/>-->
+<!--            </Tab>-->
+            <Tab fx:id="tabNewExecution" closable="false" styleClass="tab-button" text="New Execution">
+               <content>
+                  <AnchorPane prefHeight="521.0" prefWidth="1058.0">
+                     <children>
+                        <fx:include fx:id="newExecutionComponent" prefHeight="538.0" prefWidth="1326.0" source="newExecution/NewExecution.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabResults" styleClass="tab-button" text="Results">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="533.0" prefWidth="782.0" styleClass="AnchorPane">
+                     <children>
+                        <fx:include fx:id="resultComponent" source="results/Results.fxml" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</GridPane>

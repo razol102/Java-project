@@ -1,0 +1,24 @@
+.root {
+    -fx-font-family: "Calibri";
+    -fx-border-color: black; /* Border color */
+    -fx-border-width: 2px;   /* Border width */
+    -fx-border-style: dashed; /* Border style */
+    -fx-alignment: Center;
+}
+.title{
+    -fx-font-size: 30px;
+    font-weight: bold;
+}
+.grid-pane{
+    -fx-alignment: Center;
+    -fx-border-color: #a14646; /* Border color */
+    -fx-column-halignment: center;
+    -fx-row-valignment: center;
+}
+
+.label{
+    -fx-alignment: Center;
+    -fx-column-halignment: center;
+    -fx-row-valignment: center;
+}
+
